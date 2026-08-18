@@ -1,0 +1,9 @@
+{
+  "vite": {
+    "css": {
+      "lightningcss": {
+        "warnings": false
+      }
+    }
+  }
+}
