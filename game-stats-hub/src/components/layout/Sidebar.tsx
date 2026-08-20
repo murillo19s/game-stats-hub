@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Compass, Heart, Scale, Trophy, Gamepad2 } from 'lucide-react';
+import { LayoutDashboard, Compass, Heart, Scale, Trophy, Gamepad2, Flame } from 'lucide-react';
 import { useFavorites } from '../../context/FavoritesContext';
 
 interface SidebarProps {
@@ -17,6 +17,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     { to: '/top-rated', label: 'Top Avaliados', icon: Trophy },
     { to: '/compare', label: 'Comparar Jogos', icon: Scale },
     { to: '/favorites', label: 'Favoritos', icon: Heart, badge: favorites.length },
+    { to: '/steam-live', label: 'Steam Ao Vivo', icon: Flame },
   ];
 
   return (

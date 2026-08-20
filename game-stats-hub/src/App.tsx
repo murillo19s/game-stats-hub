@@ -8,7 +8,7 @@ import { Explore } from './pages/Explore';
 import { TopRated } from './pages/TopRated';
 import { Compare } from './pages/Compare';
 import { Favorites } from './pages/Favorites';
-
+import { SteamLive } from './pages/SteamLive';
 export function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -27,6 +27,7 @@ export function App() {
                 <Route path="/top-rated" element={<TopRated />} />
                 <Route path="/compare" element={<Compare />} />
                 <Route path="/favorites" element={<Favorites />} />
+                <Route path="/steam-live" element={<SteamLive />} />
               </Routes>
             </main>
           </div>
